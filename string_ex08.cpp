@@ -29,7 +29,7 @@ int main() {
     std::cin >> str_in;
 
     // modify string and print result
-    std::cout << "Zeroes removed: " << std::endl
+    std::cout << "With zeros removed: " << std::endl
         << removeLeadingZeros(str_in) << std::endl;
 
     return 0;
