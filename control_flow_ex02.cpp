@@ -23,10 +23,10 @@ int main() {
     std::cout << "Enter 3 integers (return to accept):" << std::endl;
     std::cin >> a >> b >> c;
 
-    //TODO check which is the largest from those numbers
+    //check which is the largest from those numbers
     int max_num = std::max(a, std::max(b, c));
 
-    //TODO print the largest of the numbers
+    // print the largest of the numbers
     std::cout << "The largest among the three numbers is " << max_num << std::endl;
 
     return 0;
