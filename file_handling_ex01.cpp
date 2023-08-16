@@ -18,6 +18,7 @@ void createFile(const std::string & file) {
         return;
     }
 
+    // show that it was created successfully
     std::cout << "File '" << file << "' successfully created" << std::endl;
 }
 
