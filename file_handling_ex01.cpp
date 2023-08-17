@@ -25,7 +25,7 @@ void createFile(const std::string & file) {
 
 int main() {
 
-    std::string file_name = "my_test_file.txt";
+    std::string file_name = "file_handling_ex01_my_test_file.txt";
 
     createFile(file_name);
 
