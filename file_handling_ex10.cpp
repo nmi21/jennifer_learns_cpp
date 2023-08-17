@@ -35,8 +35,6 @@ int main() {
         std::string text = std::to_string(i) + ". I added a line!";
         writeToFile(file, text);
     }
-    
-
 
     return 0;
 }
