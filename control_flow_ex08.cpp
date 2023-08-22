@@ -21,6 +21,20 @@ int reverseNumber(int num) {
     return std::stoi(num_str);
 }
 
+int reverseNumberJennifer(const int & num) {
+
+    int num_copy = num;
+    int rev_num = 0;
+
+    while (num_copy > 0) {
+        rev_num *= 10;
+        rev_num += num_copy % 10;
+        num_copy /= 10;
+    }
+
+    return rev_num;
+}
+
 int main() {
 
     int n;
@@ -28,6 +42,7 @@ int main() {
     std::cin >> n;
 
     std::cout << n << " reversed: " << reverseNumber(n) << std::endl;
+    std::cout << n << " reversed (Jennifer method): " << reverseNumberJennifer(n) << std::endl;
 
     return 0;
 }
