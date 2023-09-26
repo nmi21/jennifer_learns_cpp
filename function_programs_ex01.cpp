@@ -73,11 +73,16 @@ int main() {
     std::cout << "Enter a the last number in the range: ";
     std::cin >> last;
 
+    std::cout << std::endl;
+
     std::vector<int> primes = primesInRange(first, last);
 
-    std::cout << std::endl << "The prime numbers between " << first << " and " << last << " are as follows:" << std::endl;
-    for (auto prime : primes) {
-        std::cout << prime << std::endl;
+    std::cout << "There are " << primes.size() << " primes between " << first << " and " << last << "." << std::endl;
+    if (primes.size() > 0) {
+        std::cout << "They are as follows:" << std::endl;
+        for (auto prime : primes) {
+            std::cout << prime << std::endl;
+        }
     }
 
     return 0;
