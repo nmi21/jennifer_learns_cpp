@@ -49,7 +49,7 @@ std::vector<int> primes_in_range(int left, int right, std::vector<bool> sieve) {
 int main() {
 
     // Define limit and create sieve
-    int limit = 100;
+    int limit = 1000000;
     std::vector<bool> prime_sieve = sieve_of_eratosthenes(limit);
 
     // Grab the primes between left and right
